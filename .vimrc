@@ -95,14 +95,14 @@ let g:rainbow_active = 1
 set guifont=Hack
 
 " Hard Mode
-noremap  <Up> ""
-noremap! <Up> <Esc>
-noremap  <Down> ""
-noremap! <Down> <Esc>
-noremap  <Left> ""
-noremap! <Left> <Esc>
-noremap  <Right> ""
-noremap! <Right> <Esc>
+" noremap  <Up> ""
+" noremap! <Up> <Esc>
+" noremap  <Down> ""
+" noremap! <Down> <Esc>
+" noremap  <Left> ""
+" noremap! <Left> <Esc>
+" noremap  <Right> ""
+" noremap! <Right> <Esc>
 
 " Tabulation fixes
 set expandtab
