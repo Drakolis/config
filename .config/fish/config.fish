@@ -2,19 +2,6 @@ set -x EDITOR vim
 set -x VISUAL vim
 set -x TERMINAL alacritty
 
-# dmenu font
-set DMENU_FN "Noto-10.5"
-# menu-item background
-set DMENU_NB "#1E2127"
-# menu-item foreground
-set DMENU_NF "#ABB2BF"
-# menu-item selected background
-set DMENU_SB "#FF5000"
-# menu-item selected foreground
-set DMENU_SF "#FFFFFF"
-
-alias dmenu "dmenu -fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
-
 alias ls "exa -a --group-directories-first"
 alias lsl "exa -a -l --group-directories-first"
 
