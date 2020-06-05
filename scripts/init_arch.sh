@@ -30,6 +30,9 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Font installation
 yay -S nerd-fonts-hack
 
+# DE installation
+yay -S i3-gaps i3blocks dmenu rofi
+
 # Clean up
 yay -r
 rm ~/install -rf
