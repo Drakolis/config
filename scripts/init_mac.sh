@@ -8,3 +8,4 @@ brew install screenfetch
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
+git config --global core.excludesfile '~/global.gitignore'
