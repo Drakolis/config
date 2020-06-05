@@ -1,5 +1,5 @@
 # Let's begin
-set EDITOR vim
+export EDITOR=vim
 
 # Homebrew installation
 if hash brew>/dev/null; then
