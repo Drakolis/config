@@ -1,0 +1,4 @@
+[core]
+	excludesfile = ~/global.gitignore
+[user]
+	name = Mika Drakolis

@@ -5,7 +5,7 @@ function fish_greeting
     screenfetch
 end
 # the default color
-#set fish_color_normal
+set fish_color_normal white
 # the color for commands
 set fish_color_command green
 # the color for quoted blocks of text
@@ -15,7 +15,7 @@ set fish_color_command green
 # the color for process separators like ';' and '&'
 #set fish_color_end
 # the color used to highlight potential errors
-#set fish_color_error
+set fish_color_error red
 # the color for regular command parameters
 #set fish_color_param
 # the color used for code comments
