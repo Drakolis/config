@@ -1,14 +1,18 @@
 {
   "segments": [
     "time",
-    "virtual_env",
-    "username",
-    "hostname",
     "ssh",
     "cwd",
     "git",
     "hg",
     "jobs",
     "root"
-  ]
+  ],
+  "vcs": {
+    "show_symbol": true
+  },
+  "cwd": {
+    "full_cwd": true,
+    "max_dir_size": 10
+  }
 }
