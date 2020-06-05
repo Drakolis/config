@@ -170,12 +170,36 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night Bright)
+# One Dark                       One Light
+
+# Black:          #1E2127        Black:          #000000
+# Bright Black:   #5C6370        Bright Black:   #383A42
+# Red:            #E06C75        Red:            #E45649
+# Bright Red:     #E06C75        Bright Red:     #E45649
+# Green:          #98C379        Green:          #50A14F
+# Bright Green:   #98C379        Bright Green:   #50A14F
+# Yellow:         #D19A66        Yellow:         #986801
+# Bright Yellow:  #D19A66        Bright Yellow:  #986801
+# Blue:           #61AFEF        Blue:           #4078F2
+# Light Blue:     #61AFEF        Light Blue:     #4078F2
+# Magenta:        #C678DD        Magenta:        #A626A4
+# Light Magenta:  #C678DD        Light Magenta:  #A626A4
+# Cyan:           #56B6C2        Cyan:           #0184BC
+# Light Cyan:     #56B6C2        Light Cyan:     #0184BC
+# White:          #ABB2BF        White:          #A0A1A7
+# Bright White:   #FFFFFF        Bright White:   #FFFFFF
+# Text:           #ABB2BF        Text:           #383A42
+# Bold Text:      #ABB2BF        Bold Text:      #A0A1A7
+# Selection:      #3A3F4B        Selection:      #3A3F4B
+# Cursor:         #5C6370        Cursor:         #383A42
+# Background:     #1E2127        Background:     #F9F9F9
+
+# Colors
 colors:
   # Default colors
   primary:
-    background: '#121212'
-    foreground: '#bbbbbb'
+    background: '#1E2127'
+    foreground: '#ABB2BF'
 
     # Bright and dim foreground colors
     #
@@ -189,40 +213,40 @@ colors:
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '#121212'
-  #  cursor: '#bbbbbb'
+  cursor:
+    text: '#1E2127'
+    cursor: '#5C6370'
 
   # Selection colors
   #
   # Colors which should be used to draw the selection area. If selection
   # background is unset, selection color will be the inverse of the cell colors.
   # If only text is unset the cell text color will remain the same.
-  #selection:
-  #  text: '#eaeaea'
-  #  background: '#404040'
+  selection:
+    text: '#ABB2BF'
+    background: '#3A3F4B'
 
   # Normal colors
   normal:
-    black:   '#121212'
-    red:     '#fa2573'
-    green:   '#98e123'
-    yellow:  '#dfd460'
-    blue:    '#1080d0'
-    magenta: '#8700ff'
-    cyan:    '#43a8d0'
-    white:   '#bbbbbb'
+    black:   '#1E2127'
+    red:     '#E45649'
+    green:   '#50A14F'
+    yellow:  '#986801'
+    blue:    '#4078F2'
+    magenta: '#A626A4'
+    cyan:    '#0184BC'
+    white:   '#ABB2BF'
 
   # Bright colors
   bright:
-    black:   '#555555'
-    red:     '#f6669d'
-    green:   '#b1e05f'
-    yellow:  '#fff26d'
-    blue:    '#00afff'
-    magenta: '#af87ff'
-    cyan:    '#51ceff'
-    white:   '#ffffff'
+    black:   '#5C6370'
+    red:     '#E06C75'
+    green:   '#98C379'
+    yellow:  '#D19A66'
+    blue:    '#61AFEF'
+    magenta: '#C678DD'
+    cyan:    '#56B6C2'
+    white:   '#FFFFFF'
 
   # Dim colors
   #
