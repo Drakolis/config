@@ -313,7 +313,7 @@ selection:
 # Allow terminal applications to change Alacritty's window title.
 #dynamic_title: true
 
-cursor:
+#cursor:
   # Cursor style
   #
   # Values for `style`:
