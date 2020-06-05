@@ -18,7 +18,7 @@ else
 fi
 
 # Commmon tools installation
-yay -S fish exa python-pip ffmpeg screenfetch
+yay -S fish exa ctags python-pip ffmpeg screenfetch
 
 # Powerline for shell installation
 sudo pip install powerline-shell
