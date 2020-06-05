@@ -4,6 +4,7 @@ end
 function fish_greeting
     screenfetch
 end
+
 # the default color
 set fish_color_normal white
 # the color for commands
@@ -71,3 +72,6 @@ set fish_color_param teal
 
 # Need to figure this out
 #source ~/.nvm-fish/nvm.fish
+
+alias ls "exa -a --group-directories-first"
+alias lsl "exa -a -l --group-directories-first"

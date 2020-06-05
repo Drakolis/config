@@ -15,7 +15,7 @@ brew -Syu
 brew install git wget go
 
 # Commmon tools installation
-brew install fish ffmpeg screenfetch
+brew install fish exa ffmpeg screenfetch
 
 # Powerline for shell installation
 pip3 install powerline-shell
