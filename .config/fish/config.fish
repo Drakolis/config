@@ -68,4 +68,6 @@ set fish_color_error red
 #set fish_pager_color_selected_completion
 # fish_pager_color_description of the selected completion. Defaults to fish_pager_color_description
 #set fish_pager_color_selected_description
-source ~/.nvm-fish/nvm.fish
+
+# Need to figure this out
+#source ~/.nvm-fish/nvm.fish
