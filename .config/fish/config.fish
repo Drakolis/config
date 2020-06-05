@@ -6,19 +6,19 @@ function fish_greeting
 end
 
 # the default color
-set fish_color_normal white
+#set fish_color_normal
 # the color for commands
-set fish_color_command green
+set fish_color_command cyan
 # the color for quoted blocks of text
-#set fish_color_quote
+set fish_color_quote brgreen
 # the color for IO redirections
 #set fish_color_redirection
 # the color for process separators like ';' and '&'
-#set fish_color_end
+set fish_color_end brwhite
 # the color used to highlight potential errors
 set fish_color_error red
 # the color for regular command parameters
-set fish_color_param teal
+set fish_color_param green
 # the color used for code comments
 #set fish_color_comment
 # the color used to highlight matching parenthesis
