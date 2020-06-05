@@ -1,6 +1,3 @@
-# Let's begin
-export EDITOR=vim
-
 # Homebrew installation
 if hash brew>/dev/null; then
   echo "brew is executable, let's update"

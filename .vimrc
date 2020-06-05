@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 " Styling
-Plug 'tomasr/molokai'
-" Plug 'NLKNguyen/papercolor-theme'
+Plug 'joshdick/onedark.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'luochen1990/rainbow'
@@ -89,9 +88,9 @@ let g:netrw_liststyle=3
 "   autocmd VimEnter * :Vexplore
 " augroup END
 " Styling config
-colorscheme molokai
+colorscheme onedark
 set background=dark
-let g:airline_theme='molokai'
+let g:airline_theme='onedark'
 let g:rainbow_active = 1
 set guifont=Hack
 

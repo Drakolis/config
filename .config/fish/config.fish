@@ -75,3 +75,7 @@ set fish_color_param green
 
 alias ls "exa -a --group-directories-first"
 alias lsl "exa -a -l --group-directories-first"
+
+set -x EDITOR vim
+set -x VISUAL vim
+set -x TERMINAL alacritty

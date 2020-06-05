@@ -1,5 +1,3 @@
-# Let's begin
-export EDITOR=vim
 cd ~
 mkdir install
 
