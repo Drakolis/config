@@ -14,7 +14,7 @@ function fish_prompt
   powerline-shell --shell bare $status
 end
 function fish_greeting
-  screenfetch
+  neofetch
 end
 
 # the default color
