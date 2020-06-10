@@ -16,6 +16,15 @@ end
 function fish_greeting
   neofetch
 end
+function colortest
+  for i in {0..255} ; do
+    printf "\x1b[38;5;${i}m%3d " "${i}"
+    if (( $i == 15 )) || (( $i > 15 )) && (( ($i-15) % 12 == 0 )); then
+        echo;
+    end
+  end
+end
+
 
 # the default color
 #set fish_color_normal
