@@ -61,7 +61,6 @@ set nocompatible
 syntax enable
 filetype plugin on
 
-
 " SEARCH
 " ** -- when you look for a file, look in sub dirs of sub dirs
 set path=**
@@ -87,12 +86,25 @@ let g:netrw_liststyle=3
 "   autocmd!
 "   autocmd VimEnter * :Vexplore
 " augroup END
+
 " Styling config
 colorscheme onedark
 set background=dark
 let g:airline_theme='onedark'
 let g:rainbow_active = 1
 set guifont=Hack
+" This fixes background fuckups
+let &t_ut=''
+" General colors
+if has('gui_running') || has('nvim')
+    hi Normal 		guifg=#f6f3e8 guibg=#242424
+else
+    " Set the terminal default background and foreground colors, thereby
+    " improving performance by not needing to set these colors on empty cells.
+    hi Normal guifg=NONE guibg=NONE ctermfg=NONE ctermbg=NONE
+    let &t_ti = &t_ti . "\033]10;#f6f3e8\007\033]11;#242424\007"
+    let &t_te = &t_te . "\033]110\007\033]111\007"
+endif
 
 " Hard Mode
 " noremap  <Up> ""
