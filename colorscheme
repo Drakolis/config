@@ -21,3 +21,35 @@ Bold Text:      #ABB2BF        Bold Text:      #A0A1A7
 Selection:      #3A3F4B        Selection:      #3A3F4B
 Cursor:         #5C6370        Cursor:         #383A42
 Background:     #1E2127        Background:     #F9F9F9
+
+My
+
+Background Worst;  #131313
+Background Bar:    #191919
+Background Upper:  #363537
+
+Background:        #222222
+Text:              #F7F1FF
+Cursor:            #F7F1FF
+Selection:         #FF6600
+Selection Text:    #F7F1FF
+
+Black:             #222222
+Red:               #FC618D
+Green:             #7BD88F
+Yellow:            #FCE566
+Blue:              #4078F2
+Magenta:           #948AE3
+Cyan:              #5AD4E6
+White:             #BAB6C0
+
+Bright Black:      #363537
+Bright Red:        #FC618D
+Bright Green:      #7BD88F
+Bright Yellow:     #FCE566
+Bright Blue:       #4078F2
+Bright Magenta:    #948AE3
+Bright Cyan:       #5AD4E6
+Bright White:      #F7F1FF
+
+#FD9353
