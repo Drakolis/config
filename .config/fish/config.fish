@@ -15,6 +15,7 @@ function fish_prompt
 end
 function fish_greeting
   neofetch
+  ddate
 end
 
 # the default color
