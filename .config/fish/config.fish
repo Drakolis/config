@@ -31,7 +31,7 @@ set fish_color_end brwhite
 # the color used to highlight potential errors
 set fish_color_error red
 # the color for regular command parameters
-set fish_color_param green
+set fish_color_param brgreen
 # the color used for code comments
 #set fish_color_comment
 # the color used to highlight matching parenthesis
