@@ -21,11 +21,11 @@ end
 # the default color
 #set fish_color_normal
 # the color for commands
-set fish_color_command brcyan
+set fish_color_command blue
 # the color for quoted blocks of text
 set fish_color_quote brgreen
 # the color for IO redirections
-#set fish_color_redirection
+set fish_color_redirection brwhite
 # the color for process separators like ';' and '&'
 set fish_color_end brwhite
 # the color used to highlight potential errors
@@ -33,9 +33,9 @@ set fish_color_error red
 # the color for regular command parameters
 set fish_color_param brgreen
 # the color used for code comments
-#set fish_color_comment
+set fish_color_comment brblack
 # the color used to highlight matching parenthesis
-#set fish_color_match
+set fish_color_match brcyan
 # the color used when selecting text (in vi visual mode)
 #set fish_color_selection
 # used to highlight history search matches and the selected pager item (must be a background)
@@ -43,7 +43,7 @@ set fish_color_param brgreen
 # the color for parameter expansion operators like '*' and '~'
 set fish_color_operator bryellow
 # the color used to highlight character escapes like '\n' and '\x70'
-#set fish_color_escape
+set fish_color_escape brmagenta
 # the color used for the current working directory in the default prompt
 set fish_color_cwd bryellow
 # the color used for autosuggestions
