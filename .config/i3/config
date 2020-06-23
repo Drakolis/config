@@ -61,9 +61,10 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec vimb
 bindsym $mod+Alt+F2 exec waterfox-current
-bindsym $mod+F3 exec ranger
-bindsym $mod+Alt+F3 exec pcmanfm
-bindsym $mod+Shift+F3 exec pcmanfm_pkexec
+bindsym $mod+F3 exec code
+bindsym $mod+F1 exec ranger
+bindsym $mod+Alt+F1 exec pcmanfm
+bindsym $mod+Shift+F1 exec pcmanfm_pkexec
 # bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+\ exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+\ exec --no-startup-id compton -b
@@ -331,7 +332,7 @@ bar {
   workspace_min_width 30
 	i3bar_command i3bar
 	status_command i3status
-	position top
+	position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
@@ -339,20 +340,20 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-  font pango:Exo2, NotoSansMono Nerd Font 12
+  font pango:Exo2, NotoSansMono Nerd Font 13
 	strip_workspace_numbers yes
 
   colors {
-      background #222D31
-      statusline #F9FAF9
-      separator  #454947
+      background #131313
+      statusline #F7F1FF
+      separator  #363537
 
 #                        border  backgr. text
-      focused_workspace  #F9FAF9 #16a085 #292F34
-      active_workspace   #595B5B #353836 #FDF6E3
-      inactive_workspace #595B5B #222D31 #EEE8D5
-      binding_mode       #16a085 #2C2C2C #F9FAF9
-      urgent_workspace   #16a085 #FDF6E3 #E5201D
+      focused_workspace  #FF6600 #FF6600 #131313
+      active_workspace   #FF6600 #222222 #F7F1FF
+      inactive_workspace #222222 #222222 #F7F1FF
+      binding_mode       #FF6600 #131313 #F7F1FF
+      urgent_workspace   #FC618D #222222 #FC618D
     }
 }
 
@@ -361,13 +362,13 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000
+  client.focused          #191919 #191919 #FD9353 #FF6600
+  client.focused_inactive #222222 #222222 #F7F1FF #F7F1FF
+  client.unfocused        #222222 #222222 #BAB6C0 #F7F1FF
+  client.urgent           #222222 #222222 #FC618D #F7F1FF
+  client.placeholder      #000000 #222222 #F7F1FF #000000
 
-  client.background       #2B2C2B
+  client.background       #222222
 
 #############################
 ### settings for i3-gaps: ###
