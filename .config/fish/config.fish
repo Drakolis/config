@@ -41,7 +41,7 @@ set fish_color_param brgreen
 # used to highlight history search matches and the selected pager item (must be a background)
 #set fish_color_search_match
 # the color for parameter expansion operators like '*' and '~'
-#set fish_color_operator
+set fish_color_operator bryellow
 # the color used to highlight character escapes like '\n' and '\x70'
 #set fish_color_escape
 # the color used for the current working directory in the default prompt
