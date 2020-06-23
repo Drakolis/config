@@ -32,7 +32,7 @@ Background:        #222222
 Text:              #F7F1FF
 Cursor:            #F7F1FF
 Selection:         #FF6600
-Selection Text:    #F7F1FF
+Selection Text:    #222222
 
 Black:             #222222
 Red:               #FC618D

@@ -28,7 +28,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Font installation
-yay -S nerd-fonts-hack ttf-exo-2
+yay -S nerd-fonts-mononoki ttf-exo-2
 
 # DE installation
 yay -S i3-gaps i3blocks dmenu_recency rofi morc_menu
