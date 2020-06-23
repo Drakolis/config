@@ -28,28 +28,28 @@ Background Worst;  #131313
 Background Bar:    #191919
 Background Upper:  #363537
 
-Background:        #222222
+Background:        #1E2127
 Text:              #F7F1FF
 Cursor:            #F7F1FF
-Selection:         #FF6600
-Selection Text:    #222222
+Selection:         #3A3F4B
+Selection Text:    #ABB2BF
 
-Black:             #222222
-Red:               #FC618D
-Green:             #7BD88F
-Yellow:            #FCE566
+Black:             #1E2127
+Red:               #E45649
+Green:             #50A14F
+Yellow:            #986801
 Blue:              #4078F2
-Magenta:           #948AE3
-Cyan:              #5AD4E6
-White:             #BAB6C0
+Magenta:           #A626A4
+Cyan:              #0184BC
+White:             #ABB2BF
 
-Bright Black:      #363537
-Bright Red:        #FC618D
-Bright Green:      #7BD88F
-Bright Yellow:     #FCE566
-Bright Blue:       #4078F2
-Bright Magenta:    #948AE3
-Bright Cyan:       #5AD4E6
-Bright White:      #F7F1FF
+Bright Black:      #5C6370
+Bright Red:        #E06C75
+Bright Green:      #98C379
+Bright Yellow:     #D19A66
+Bright Blue:       #61AFEF
+Bright Magenta:    #C678DD
+Bright Cyan:       #56B6C2
+Bright White:      #FFFFFF
 
 #FD9353

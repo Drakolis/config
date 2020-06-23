@@ -21,9 +21,9 @@ end
 # the default color
 #set fish_color_normal
 # the color for commands
-set fish_color_command cyan
+set fish_color_command brcyan
 # the color for quoted blocks of text
-set fish_color_quote yellow
+set fish_color_quote brgreen
 # the color for IO redirections
 #set fish_color_redirection
 # the color for process separators like ';' and '&'
@@ -31,7 +31,7 @@ set fish_color_end brwhite
 # the color used to highlight potential errors
 set fish_color_error red
 # the color for regular command parameters
-set fish_color_param bryellow
+set fish_color_param brgreen
 # the color used for code comments
 #set fish_color_comment
 # the color used to highlight matching parenthesis
@@ -45,7 +45,7 @@ set fish_color_param bryellow
 # the color used to highlight character escapes like '\n' and '\x70'
 #set fish_color_escape
 # the color used for the current working directory in the default prompt
-#set fish_color_cwd
+set fish_color_cwd bryellow
 # the color used for autosuggestions
 #set fish_color_autosuggestion
 # the color used to print the current username in some of fish default prompts
