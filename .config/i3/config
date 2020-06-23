@@ -362,11 +362,11 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #191919 #191919 #FD9353 #FF6600
-  client.focused_inactive #222222 #222222 #F7F1FF #F7F1FF
-  client.unfocused        #222222 #222222 #BAB6C0 #F7F1FF
-  client.urgent           #222222 #222222 #FC618D #F7F1FF
-  client.placeholder      #000000 #222222 #F7F1FF #000000
+  client.focused          #363537 #363537 #FD9353 #FF6600
+  client.focused_inactive #191919 #191919 #F7F1FF #F7F1FF
+  client.unfocused        #191919 #191919 #BAB6C0 #F7F1FF
+  client.urgent           #191919 #191919 #FC618D #F7F1FF
+  client.placeholder      #000000 #191919 #F7F1FF #000000
 
   client.background       #222222
 
@@ -375,7 +375,7 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 0
+gaps inner 5
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
