@@ -23,7 +23,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # Font installation
 brew tap homebrew/cask-fonts
-brew cask install font-mononoki-nerd-font
+brew cask install font-hack-nerd-font
 
 # Clean up
 
