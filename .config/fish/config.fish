@@ -4,6 +4,7 @@ set -x TERMINAL alacritty
 
 alias ls "exa -a --group-directories-first"
 alias lsl "exa -a -l --group-directories-first"
+alias nr "npm run"
 
 function cpyr
   cp $argv/$argv temp
