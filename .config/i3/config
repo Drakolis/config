@@ -348,10 +348,10 @@ bar {
       separator  #696C71
 
 #                        border  backgr. text
-      focused_workspace  #36383E #36383E #00796B
-      active_workspace   #F7F1FF #36383E #F7F1FF
+      focused_workspace  #00796B #00796B #F7F1FF
+      active_workspace   #00796B #36383E #F7F1FF
       inactive_workspace #36383E #36383E #F7F1FF
-      binding_mode       #36383E #00796B #F7F1FF
+      binding_mode       #00796B #36383E #F7F1FF
       urgent_workspace   #DD2C00 #36383E #DD2C00
     }
 }
