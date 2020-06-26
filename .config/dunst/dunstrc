@@ -1,6 +1,6 @@
 [global]
     frame_width = 1
-    frame_color = "#788388"
+    frame_color = "#00796B"
 
     font = Noto Sans 12
 
@@ -154,7 +154,7 @@
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
     # Limit icons size.
-    max_icon_size=128
+    max_icon_size=48
 
 [shortcuts]
 
@@ -181,13 +181,13 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#263238"
-    foreground = "#556064"
+    background = "#26282C"
+    foreground = "#696C71"
     timeout = 10
 
 [urgency_normal]
-    background = "#263238"
-    foreground = "#F9FAF9"
+    background = "#26282C"
+    foreground = "#F7F1FF"
     timeout = 10
 
 [urgency_critical]

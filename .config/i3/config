@@ -367,7 +367,7 @@ bindsym $mod+m bar mode toggle
   client.urgent           #DD2C00 #DD2C00 #FFFFFF #BAB6C0
   client.placeholder      #000000 #36383E #F7F1FF #000000
 
-  client.background       #26282c
+  client.background       #26282C
 
 #############################
 ### settings for i3-gaps: ###
