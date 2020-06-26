@@ -352,7 +352,7 @@ bar {
       active_workspace   #00796B #36383E #F7F1FF
       inactive_workspace #36383E #36383E #F7F1FF
       binding_mode       #00796B #36383E #F7F1FF
-      urgent_workspace   #DD2C00 #36383E #DD2C00
+      urgent_workspace   #DD2C00 #DD2C00 #F7F1FF
     }
 }
 
