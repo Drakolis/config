@@ -343,16 +343,16 @@ bar {
 	strip_workspace_numbers yes
 
   colors {
-      background #131313
+      background #36383e
       statusline #F7F1FF
-      separator  #363537
+      separator  #AAAAAA
 
 #                        border  backgr. text
       focused_workspace  #00796b #00796b #F7F1FF
       active_workspace   #00796b #222222 #F7F1FF
       inactive_workspace #222222 #222222 #F7F1FF
       binding_mode       #00796b #131313 #F7F1FF
-      urgent_workspace   #E45649 #222222 #E45649
+      urgent_workspace   #DD2C00 #222222 #DD2C00
     }
 }
 
@@ -361,10 +361,10 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #363537 #363537 #FFFFFF #00796b
+  client.focused          #36383e #36383e #FFFFFF #00796b
   client.focused_inactive #191919 #191919 #F7F1FF #F7F1FF
   client.unfocused        #191919 #191919 #BAB6C0 #F7F1FF
-  client.urgent           #191919 #191919 #E45649 #F7F1FF
+  client.urgent           #191919 #191919 #DD2C00 #F7F1FF
   client.placeholder      #000000 #191919 #F7F1FF #000000
 
   client.background       #222222
