@@ -1,2 +1,2 @@
 rofi.theme: ~/.config/rofi/drakolis.rasi
-rofi.modi: "window,run,emoji,drun"
+rofi.modi: window,run,emoji,drun
