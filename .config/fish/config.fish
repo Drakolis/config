@@ -20,23 +20,29 @@ function fish_greeting
   ddate
 end
 function languages_known
-    if type ruby > /dev/null
+    if type ruby > /dev/null 2> /dev/null
       ruby --version
+      echo
     end
-    if type lua > /dev/null
+    if type lua > /dev/null 2> /dev/null
       lua -v
+      echo
     end
-    if type python > /dev/null
+    if type python > /dev/null 2> /dev/null
       python --version
+      echo
     end
-    if type go > /dev/null
+    if type go > /dev/null 2> /dev/null
       go version
+      echo
     end
-    if type node > /dev/null
+    if type node > /dev/null 2> /dev/null
       printf 'NodeJS: %s\n' (node --version)
+      echo
     end
-    if type php > /dev/null
+    if type php > /dev/null 2> /dev/null
       php --version
+      echo
     end
 end
 
