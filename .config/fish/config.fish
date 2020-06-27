@@ -37,12 +37,11 @@ function languages_known
       echo
     end
     if type node > /dev/null 2> /dev/null
-      printf 'NodeJS: %s\n' (node --version)
+      printf 'NodeJS %s\n' (node --version)
       echo
     end
     if type php > /dev/null 2> /dev/null
       php --version
-      echo
     end
 end
 
