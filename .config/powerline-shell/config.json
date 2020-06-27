@@ -2,10 +2,11 @@
   "segments": [
     "time",
     "ssh",
+    "jobs",
     "cwd",
     "git",
     "hg",
-    "jobs",
+    "read_only",
     "root"
   ],
   "vcs": {

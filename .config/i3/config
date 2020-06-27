@@ -36,12 +36,12 @@ bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id dmenu_recency
 
 # launch categorized menu
-bindsym $mod+z exec --no-startup-id morc_menu
+# bindsym $mod+z exec --no-startup-id morc_menu
 
 bindsym $mod+Shift+e exec --no-startup-id rofi -show run
 bindsym $mod+e exec --no-startup-id rofi -show drun
 bindsym $mod+w exec --no-startup-id rofi -show window
-bindsym $mod+. exec --no-startup-id rofi -show emoji
+bindsym $mod+period exec --no-startup-id rofi -show emoji
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##

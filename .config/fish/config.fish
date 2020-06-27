@@ -19,6 +19,26 @@ function fish_greeting
   neofetch
   ddate
 end
+function languages_known
+    if type ruby > /dev/null
+      ruby --version
+    end
+    if type lua > /dev/null
+      lua -v
+    end
+    if type python > /dev/null
+      python --version
+    end
+    if type go > /dev/null
+      go version
+    end
+    if type node > /dev/null
+      printf 'NodeJS: %s\n' (node --version)
+    end
+    if type php > /dev/null
+      php --version
+    end
+end
 
 # the default color
 #set fish_color_normal
