@@ -3,7 +3,12 @@
  * User: Drakolis
  * Copyright: 2020 Drakolis
  ***********************************************/
-// (0, 121, 107, 1)
+
+configuration {
+	show-icons:      true;
+  font: "Noto Sans 12";
+}
+
 * {
     spacing:                     2;
     padding:                     5;

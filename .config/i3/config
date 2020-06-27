@@ -38,7 +38,8 @@ bindsym $mod+d exec --no-startup-id dmenu_recency
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
-bindsym $mod+e exec --no-startup-id rofi -show run
+bindsym $mod+Shift+e exec --no-startup-id rofi -show run
+bindsym $mod+e exec --no-startup-id rofi -show drun
 bindsym $mod+w exec --no-startup-id rofi -show window
 
 ################################################################################################
@@ -232,7 +233,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+0 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
 set $mode_system " - L,  - E,  - U, 鈴 - S,  - H, ﰇ - R, 襤 - SHIFT+S"
@@ -282,7 +283,7 @@ bindsym $mod+l exec --no-startup-id blurlock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/WallpaperNew.JPG
-# exec --no-startup-id sleep 1; compton -b
+exec --no-startup-id sleep 1; compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
