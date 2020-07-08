@@ -5,7 +5,7 @@ mkdir install
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install git wget curl
-# sudo pacman -S git wget curl base-devel go
+
 # # Yay installation
 # if hash yay>/dev/null; then
 #   echo "yay is executable, let's update"
