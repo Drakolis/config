@@ -17,7 +17,6 @@ function fish_prompt
 end
 function fish_greeting
   neofetch
-  ddate
 end
 function languages_known
     if type ruby > /dev/null 2> /dev/null

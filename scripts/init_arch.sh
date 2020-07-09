@@ -14,7 +14,7 @@ else
   cd ~/install
   git clone https://aur.archlinux.org/yay.git
   cd yay
-  makepg -si
+  makepkg -si
 fi
 
 # Commmon tools installation
