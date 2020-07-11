@@ -1,0 +1,19 @@
+{
+  "segments": [
+    "time",
+    "ssh",
+    "jobs",
+    "cwd",
+    "git",
+    "hg",
+    "read_only",
+    "root"
+  ],
+  "vcs": {
+    "show_symbol": true
+  },
+  "cwd": {
+    "full_cwd": true,
+    "max_dir_size": 10
+  }
+}
