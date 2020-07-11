@@ -1,11 +1,20 @@
 set -x EDITOR vim
 set -x VISUAL vim
 set -x TERMINAL alacritty
-set -x BROWSER waterfox-current
+
+# For adding yarn global bin to path if yarn exists
+if type yarn > /dev/null
+  set -x PATH "(yarn global bin) $PATH"
+end
 
 alias ls "exa -a --group-directories-first"
 alias lsl "exa -a -l --group-directories-first"
 alias nr "npm run"
+
+# For fixing nvm on mac os
+if test -f "~/.nvm-fish/nvm.fish"
+  source ~/.nvm-fish/nvm.fish
+end
 
 function cpyr
   cp $argv/$argv temp
@@ -108,7 +117,3 @@ set fish_color_cwd bryellow
 #set fish_pager_color_selected_completion
 # fish_pager_color_description of the selected completion. Defaults to fish_pager_color_description
 #set fish_pager_color_selected_description
-
-# Need to figure this out
-#source ~/.nvm-fish/nvm.fish
-
