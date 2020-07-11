@@ -7,6 +7,7 @@ if type yarn > /dev/null
   set -x PATH (yarn global bin) $PATH
 end
 
+alias rmd "rm -rf"
 alias ls "exa -a --group-directories-first"
 alias lsl "exa -a -l --group-directories-first"
 alias nr "npm run"
