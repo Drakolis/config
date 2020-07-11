@@ -4,7 +4,7 @@ set -x TERMINAL alacritty
 
 # For adding yarn global bin to path if yarn exists
 if type yarn > /dev/null
-  set -x PATH "%s $PATH" (yarn global bin)
+  set -x PATH (yarn global bin) $PATH
 end
 
 alias ls "exa -a --group-directories-first"
