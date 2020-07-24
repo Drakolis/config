@@ -432,9 +432,9 @@ mode "$mode_gaps_outer" {
 #       Input
 ######################
 
-set $touchpad 10
+set $touchpad 11
 
 exec "setxkbmap -layout us,ru"
 exec "setxkbmap -option 'grp:win_space_toggle'"
-exec "xinput $touchpad 322 1"
-
+exec "xinput set-prop $touchpad 322 1"
+exec "sh ~/scripts/polybar_run.sh"
