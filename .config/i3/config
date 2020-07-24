@@ -437,4 +437,4 @@ set $touchpad 11
 exec "setxkbmap -layout us,ru"
 exec "setxkbmap -option 'grp:win_space_toggle'"
 exec "xinput set-prop $touchpad 322 1"
-exec "sh ~/scripts/polybar_run.sh"
+exec_always "sh ~/scripts/polybar_run.sh"
