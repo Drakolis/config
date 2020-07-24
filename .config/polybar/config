@@ -210,13 +210,6 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
-click-right = alacritty -e 'alsamixer' &
-
-[module/microphone]
-type = custom/script
-exec = ~/scripts/polybar/pulseaudio-microphone.sh
-tail = true
-click-left = ~/scripts/polybar/scripts/polybar/pulseaudio-microphone.sh --toggle &
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -414,3 +407,15 @@ margin-top =
 margin-bottom =
 
 ; vim:ft=dosini
+
+[module/microphone]
+type = custom/script
+exec = ~/scripts/polybar/pulseaudio-microphone.sh
+tail = true
+click-left = ~/scripts/polybar/pulseaudio-microphone.sh --toggle &
+
+[module/bluetooth]
+type = custom/script
+exec = ~/scripts/polybar/system-bluetooth-bluetoothctl.sh
+tail = true
+click-left = ~/scripts/polybar/system-bluetooth-bluetoothctl.sh --toggle &
