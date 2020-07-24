@@ -31,7 +31,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 yay -S nerd-fonts-hack ttf-exo-2
 
 # DE installation
-yay -S i3-gaps i3blocks dmenu_recency rofi morc_menu
+yay -S i3-gaps i3blocks dmenu_recency rofi
+yay -S polybar polybar-scripts-git
 
 # Clean up
 yay -r
