@@ -57,7 +57,7 @@ font-1 = NotoSansMono Nerd Font:pixelsize=13;1
 
 modules-left = i3
 modules-center =
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard wireless-network wired-network memory cpu temperature battery date powermenu
+modules-right = filesystem xbacklight pulseaudio xkeyboard wireless-network wired-network memory cpu temperature battery0 battery1 date
 
 tray-position = right
 tray-padding = 2
@@ -131,20 +131,21 @@ format-prefix-underline = ${colors.secondary}
 
 label-layout = %name%
 label-layout-underline = ${colors.secondary}
+label-layout-margin = 0
 
-label-indicator-on-capslock = 
+label-indicator-on-capslock =  CPS
 label-indicator-on-capslock-padding = 1
-label-indicator-on-capslock-margin = 1
-label-indicator-on-capslock-background = ${colors.secondary}
+label-indicator-on-capslock-margin = 0
+label-indicator-on-capslock-background = ${colors.background}
 label-indicator-on-capslock-underline = ${colors.secondary}
 
-label-indicator-on-numlock = Num
+label-indicator-on-numlock = 1 NUM
 label-indicator-on-numlock-padding = 1
-label-indicator-on-numlock-margin = 1
+label-indicator-on-numlock-margin = 0
 label-indicator-on-numlock-background = ${colors.secondary}
 label-indicator-on-numlock-underline = ${colors.secondary}
 
-label-indicator-on-scrolllock = Scroll
+label-indicator-on-scrolllock = 0 SCR
 label-indicator-on-scrolllock-padding = 1
 label-indicator-on-scrolllock-margin = 1
 label-indicator-on-scrolllock-background = ${colors.secondary}
@@ -165,8 +166,9 @@ type = internal/xbacklight
 
 format = <label> <bar>
 label = 
+label-foreground = ${colors.foreground-alt}
 
-bar-width = 10
+bar-width = 5
 bar-indicator = |
 bar-indicator-foreground = #fff
 bar-indicator-font = 2
@@ -176,6 +178,39 @@ bar-fill-foreground = #9f78e1
 bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <ramp-volume> <label-volume> <bar-volume>
+label-volume = %percentage%%
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
+ramp-volume-foreground = ${colors.foreground-alt}
+label-volume-foreground = ${root.foreground}
+
+format-muted = <label-muted> <bar-volume>
+label-muted = ﱝ OFF
+label-muted-foreground = ${colors.foreground-alt}
+
+bar-volume-width = 5
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+click-right = pavucontrol &
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -226,7 +261,7 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 format-packetloss = <animation-packetloss> <label-connected>`
 format-connected-underline = #9f78e1
-label-connected = %essid%
+label-connected = %local_ip%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -234,11 +269,11 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 直
+ramp-signal-1 = 直
+ramp-signal-2 = 直
+ramp-signal-3 = 直
+ramp-signal-4 = 直
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/wired-network]
@@ -259,46 +294,19 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 date =
-date-alt = " %Y-%m-%d"
+date-alt = " %d.%m.%Y"
 
-time = %H:%M
+time = %H:%M:%S
 time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
 label = %date% %time%
-
-[module/pulseaudio]
-type = internal/pulseaudio
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
-label-volume-foreground = ${root.foreground}
-
-label-muted = 🔇 muted
-label-muted-foreground = #666
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/alsa]
 type = internal/alsa
@@ -328,38 +336,35 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
-[module/battery]
+[module/battery0]
 type = internal/battery
 battery = BAT0
-adapter = ADP1
+adapter = AC
 full-at = 98
 
-format-charging = <animation-charging> <label-charging>
+format-charging = <ramp-capacity> <label-charging>
 format-charging-underline = #ffb52a
+format-charging-prefix = "ﮣ "
+format-charging-prefix-foreground = ${colors.foreground-alt}
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
+format-full = <ramp-capacity> <label-full>
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
+[module/battery1]
+inherit = module/battery0
+battery = BAT1
 
 [module/powermenu]
 type = custom/menu
@@ -368,7 +373,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 襤
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}

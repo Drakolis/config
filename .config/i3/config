@@ -47,7 +47,7 @@ bindsym $mod+period exec --no-startup-id rofi -show emoji
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
@@ -60,13 +60,16 @@ bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+Alt+F2 exec vimb
-bindsym $mod+F2 exec vivaldi-stable
-bindsym $mod+F3 exec code
-bindsym $mod+F1 exec ranger
+bindsym $mod+F1 exec alacritty -e 'ranger'
 bindsym $mod+Alt+F1 exec pcmanfm
 bindsym $mod+Shift+F1 exec pcmanfm_pkexec
+bindsym $mod+F2 exec vivaldi-stable
+bindsym $mod+Alt+F2 exec vimb
+bindsym $mod+F3 exec code
+bindsym $mod+Alt+F3 exec alacritty -e 'vim'
+
+bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
+
 # bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+\ exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+\ exec --no-startup-id compton -b
@@ -359,7 +362,7 @@ set_from_resource $term_color15    color15
 #}
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+# bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
