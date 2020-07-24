@@ -57,7 +57,7 @@ font-1 = NotoSansMono Nerd Font:pixelsize=13;1
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = filesystem xbacklight alsa microphone xkeyboard wireless-network wired-network memory cpu temperature battery0 battery1 date
+modules-right = filesystem xbacklight alsa microphone xkeyboard wireless-network wired-network bluetooth memory cpu temperature battery0 battery1 date pacman
 
 ;tray-position = right
 ;tray-padding = 2
@@ -125,27 +125,33 @@ label = %title:0:30:...%
 [module/xkeyboard]
 type = internal/xkeyboard
 
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
-label-layout = %name%
+label-layout = %icon%
 label-layout-underline = ${colors.secondary}
 label-layout-margin = 0
 
-label-indicator-on-capslock =  CPS
+layout-icon-default = WTF
+layout-icon-0 = ru;Рус
+layout-icon-1 = us;Eng
+layout-icon-2 = de;Deu
+layout-icon-3 = el:Ελλ
+
+label-indicator-on-capslock = 
 label-indicator-on-capslock-padding = 1
 label-indicator-on-capslock-margin = 0
 label-indicator-on-capslock-background = ${colors.background}
 label-indicator-on-capslock-underline = ${colors.secondary}
 
-label-indicator-on-numlock = 1 NUM
+label-indicator-on-numlock = 1
 label-indicator-on-numlock-padding = 1
 label-indicator-on-numlock-margin = 0
 label-indicator-on-numlock-background = ${colors.secondary}
 label-indicator-on-numlock-underline = ${colors.secondary}
 
-label-indicator-on-scrolllock = 0 SCR
+label-indicator-on-scrolllock = 0
 label-indicator-on-scrolllock-padding = 1
 label-indicator-on-scrolllock-margin = 1
 label-indicator-on-scrolllock-background = ${colors.secondary}
@@ -219,7 +225,7 @@ card = intel_backlight
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = ﬙
+format-prefix = "﬙ "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
 label = %percentage_used%%
@@ -343,14 +349,14 @@ full-at = 98
 
 format-charging = <ramp-capacity> <label-charging>
 format-charging-underline = #ffb52a
-format-charging-prefix = "ﮣ "
+format-charging-prefix = "ﮣ"
 format-charging-prefix-foreground = ${colors.foreground-alt}
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full = <ramp-capacity> <label-full>
-format-full-prefix = " "
+format-full-prefix = ""
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
@@ -416,6 +422,12 @@ click-left = ~/scripts/polybar/pulseaudio-microphone.sh --toggle &
 
 [module/bluetooth]
 type = custom/script
+format-underline = #9f78e1
 exec = ~/scripts/polybar/system-bluetooth-bluetoothctl.sh
 tail = true
 click-left = ~/scripts/polybar/system-bluetooth-bluetoothctl.sh --toggle &
+
+[module/pacman]
+type = custom/script
+exec = ~/scripts/polybar/updates-pacman-aurhelper.sh
+interval = 600
