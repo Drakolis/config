@@ -62,7 +62,7 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+Alt+F2 exec vimb
-bindsym $mod+F2 exec waterfox-current
+bindsym $mod+F2 exec vivaldi-stable
 bindsym $mod+F3 exec code
 bindsym $mod+F1 exec ranger
 bindsym $mod+Alt+F1 exec pcmanfm
@@ -191,7 +191,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
-assign [class="waterfox-current"] $ws2
+assign [class="vivaldi-stable"] $ws2
 assign [class="Code"] $ws3
 # assign [class="Skype"] $ws5
 

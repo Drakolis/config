@@ -1,7 +1,7 @@
 set -x EDITOR vim
 set -x VISUAL vim
 set -x TERMINAL alacritty
-set -x BROWSER vivaldi
+set -x BROWSER vivaldi-stable
 
 # For adding yarn global bin to path if yarn exists
 if type yarn > /dev/null

@@ -55,7 +55,7 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 URxvt.scrollBar:                  false
 URxvt.scrollBar_right:            false
 URxvt.urgentOnBell:               true
-URxvt.urlLauncher:                waterfox-current
+URxvt.urlLauncher:                vivaldi-stable
 URxvt.underlineURLs:              true
 URxvt.urlButton:                  true
 URxvt.cursorBlink:                true
