@@ -1,6 +1,7 @@
 {
   "segments": [
     "time",
+    "battery",
     "ssh",
     "jobs",
     "cwd",

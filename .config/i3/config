@@ -357,7 +357,7 @@ set_from_resource $term_color15    color15
 #      urgent_workspace   #DD2C00 #DD2C00 #F7F1FF
 #    }
 #}
-exec_always killall polybar && polybar drakolis
+
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
