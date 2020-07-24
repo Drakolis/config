@@ -431,4 +431,3 @@ click-left = ~/scripts/polybar/system-bluetooth-bluetoothctl.sh --toggle &
 type = custom/script
 exec = ~/scripts/polybar/updates-pacman-aurhelper.sh
 interval = 600
-click-left = alacritty -e "yay && yay -c" &
