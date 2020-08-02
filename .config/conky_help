@@ -1,14 +1,16 @@
 conky.config = {
 	alignment = 'bottom_left',
 	background = true,
-	color2 = '2ECC71',
+	color2 = '52b234',
 	cpu_avg_samples = 2,
 	default_color = 'FFFFFF',
 	double_buffer = true,
-	font = 'Bitstream Vera Sans:size=8',
+	font = 'NotoSansMono Nerd Font:size=13',
+	font2 = '',
 	gap_x = 25,
 	gap_y = 45,
 	minimum_width = 200,
+  maximum_height = 900,
 	no_buffers = true,
 	own_window = true,
 	own_window_type = 'override',
@@ -17,18 +19,40 @@ conky.config = {
 	use_xft = true,
 }
 conky.text = [[
-${color2}open new terminal - ${color}mod+Enter
-${color2}kill focused - ${color}mod+Shift+q
-${color2}toggle split direction - ${color}mod+q
-${color2}dmenu - ${color}mod+d
-${color2}bmenu - ${color}mod+Ctrl+b
-${color2}morc_menu - ${color}mod+z
-${color2}switch to workspace 1-8 - ${color}mod+1-8
-${color2}send to workspace 1-8 - ${color}mod+Ctrl+1-8
-${color2}navigate workspaces - ${color}mod+Ctrl+arrowkeys
-${color2}toggle floating - ${color}mod+Shift+Space
-${color2}exit - ${color}mod+0
+${color2}____APPS____
+${color2}+${font Exo2 Bold:size=10} - ${color}Terminal$font
+${color2}+F1${font Exo2 Bold:size=10} - ${color}File Manager$font
+${color2}+F2${font Exo2 Bold:size=10} - ${color}Browser$font
+${color2}+F3${font Exo2 Bold:size=10} - ${color}IDE$font
+${color2}+F4${font Exo2 Bold:size=10} - ${color}Sound Mixer$font
 
-${color2}help - ${color}mod+Shift+h
-default mod=<Super>
+${color2}+D${font Exo2 Bold:size=10} - ${color}DMenu$font
+${color2}+E${font Exo2 Bold:size=10} - ${color}Run App$font
+${color2}+W${font Exo2 Bold:size=10} - ${color}Window List$font
+${color2}+.${font Exo2 Bold:size=10} - ${color}Emoji Selector$font
+${color2}_____SERV_____
+${color2}+\${font Exo2 Bold:size=10} - ${color}Stop Effects$font
+${color2}+דּ+\${font Exo2 Bold:size=10} - ${color}Start Effects$font
+${color2}+\${font Exo2 Bold:size=10} - ${color}Change Desktop$font
+${color2}_____BORD_____
+${color2}+U${font Exo2 Bold:size=10} - ${color}Disable Borders$font
+${color2}+Y${font Exo2 Bold:size=10} - ${color}Thin Borders$font
+${color2}+N${font Exo2 Bold:size=10} - ${color}Normal Borders$font
+${color2}+${font Exo2 Bold:size=10} - ${color}To Move Apps Around$font
+${color2}_____PSCR_____
+${color2}${font Exo2 Bold:size=10} - ${color}Screenshot Area$font
+${color2}+${font Exo2 Bold:size=10} - ${color}Screenshot Window$font
+${color2}דּ+${font Exo2 Bold:size=10} - ${color}Screenshot Screen$font
+${color2}_____LAYT_____
+${color2}+F11${font Exo2 Bold:size=10} - ${color}Layout: FullScreen$font
+${color2}+S${font Exo2 Bold:size=10} - ${color}Layout: Stacking$font
+${color2}+T${font Exo2 Bold:size=10} - ${color}Layout: Tabbed$font
+${color2}+P${font Exo2 Bold:size=10} - ${color}Layout: Split$font
+${color2}+F${font Exo2 Bold:size=10} - ${color}Layout: Floating$font
+${color2}_____WIND_____
+${color2}+וּ+S${font Exo2 Bold:size=10} - ${color}Stick Window$font
+${color2}+A${font Exo2 Bold:size=10} - ${color}Go To Parent$font
+${color2}+וּ+-${font Exo2 Bold:size=10} - ${color}Put To Scratchpad$font
+${color2}+-${font Exo2 Bold:size=10} - ${color}Display Scratchpad$font
+${voffset 150}
 ]]
