@@ -120,7 +120,7 @@ bindsym $mod+b workspace back_and_forth
 bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 
 # split orientation
-bindsym $mod+h split g;exec notify-send 'Tile Horizontally'
+bindsym $mod+g split h;exec notify-send 'Tile Horizontally'
 bindsym $mod+v split v;exec notify-send 'Tile Vertically'
 # bindsym $mod+g split toggle
 
@@ -288,7 +288,7 @@ mode $resize_mode {
 }
 
 # Lock screen
-bindsym $mod+l exec --no-startup-id blurlock
+bindsym $mod+Ctrl+q exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
