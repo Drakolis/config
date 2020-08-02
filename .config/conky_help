@@ -5,7 +5,7 @@ conky.config = {
 	cpu_avg_samples = 2,
 	default_color = 'FFFFFF',
 	double_buffer = true,
-	font = 'NotoSansMono Nerd Font:size=13',
+	font = 'NotoSansMono Nerd Font:size=12',
 	font2 = '',
 	gap_x = 25,
 	gap_y = 45,
