@@ -293,7 +293,7 @@ bindsym $mod+Ctrl+q exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/WallpaperNew.JPG
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/WallpaperNew.JPG
 exec --no-startup-id sleep 1; compton -b
 # exec --no-startup-id nm-applet
 # exec --no-startup-id xfce4-power-manager
