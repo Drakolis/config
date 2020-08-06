@@ -301,7 +301,7 @@ exec --no-startup-id sleep 1; compton -b
 # exec --no-startup-id clipit
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-# exec conky -c ~/.config/conky
+# Eexec conky -c ~/.config/conky
 exec conky -c ~/.config/conky_help
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock

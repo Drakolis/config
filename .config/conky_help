@@ -33,7 +33,6 @@ ${color2}${font Exo2 Bold:size=12}Borders:$font
 ${color2}+U${font Exo2 Bold:size=10} - ${color}Disable Borders$font
 ${color2}+Y${font Exo2 Bold:size=10} - ${color}Thin Borders$font
 ${color2}+N${font Exo2 Bold:size=10} - ${color}Normal Borders$font
-${color2}+${font Exo2 Bold:size=10} - ${color}To Move Apps Around$font
 ${color2}${font Exo2 Bold:size=12}PrintScreen:$font
 ${color2}${font Exo2 Bold:size=10} - ${color}Screenshot Area$font
 ${color2}+${font Exo2 Bold:size=10} - ${color}Screenshot Window$font
