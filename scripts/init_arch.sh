@@ -30,6 +30,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # Font installation
 yay -S nerd-fonts-hack ttf-exo-2
 
+# Shell extensions
+yay -S fisher
+fisher add jorgebucaran/nvm.fish
+
 # DE installation
 yay -S i3-gaps i3blocks dmenu_recency rofi
 yay -S polybar polybar-scripts-git
