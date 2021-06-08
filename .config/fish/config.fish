@@ -69,7 +69,7 @@ end
 # the default color
 #set fish_color_normal
 # the color for commands
-set fish_color_command blue
+set fish_color_command cyan
 # the color for quoted blocks of text
 set fish_color_quote brgreen
 # the color for IO redirections
