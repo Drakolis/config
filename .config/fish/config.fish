@@ -17,9 +17,6 @@ function cpyr
   rm -rf $argv
   mv temp $argv
 end
-function fish_prompt
-  powerline-shell --shell bare $status
-end
 function fish_greeting
   neofetch
 end
