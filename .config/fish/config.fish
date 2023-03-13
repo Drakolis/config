@@ -12,11 +12,6 @@ alias lsl "exa -a -l --group-directories-first"
 alias nr "npm run"
 alias cwd "echo $PWD"
 
-# For fixing nvm on mac os
-if test -f "~/.nvm-fish/nvm.fish"
-  source ~/.nvm-fish/nvm.fish
-end
-
 function cpyr
   cp $argv/$argv temp
   rm -rf $argv
@@ -52,16 +47,6 @@ function languages_known
     if type php > /dev/null 2> /dev/null
       php --version
     end
-end
-function webfleet_release
-  npm version $argv --no-git-tag-version
-  set DRAKOLIS_WEBFLEET_PROJECT_NAME (node -e "console.log(require('./package.json').name.split(/@.+\//).reverse()[0])")
-  set DRAKOLIS_WEBFLEET_PROJECT_VERSION (node -e "console.log(require('./package.json').version)")
-  git commit -am "release/$DRAKOLIS_WEBFLEET_PROJECT_NAME/$DRAKOLIS_WEBFLEET_PROJECT_VERSION"
-  git tag -a release/$DRAKOLIS_WEBFLEET_PROJECT_NAME/$DRAKOLIS_WEBFLEET_PROJECT_VERSION -m "created tag"
-  git push
-  git push origin release/$DRAKOLIS_WEBFLEET_PROJECT_NAME/$DRAKOLIS_WEBFLEET_PROJECT_VERSION
-  printf "Released $DRAKOLIS_WEBFLEET_PROJECT_NAME@$DRAKOLIS_WEBFLEET_PROJECT_VERSION"
 end
 
 # the default color
