@@ -8,7 +8,6 @@ else
 fi
 
 # Updating the system and getting important utilities
-brew -Syu
 brew install git wget go
 
 # Commmon tools installation
