@@ -13,21 +13,14 @@ brew install git wget go
 # Commmon tools installation
 brew install fish exa ctags ffmpeg neofetch
 
-# Powerline for shell installation
-pip3 install powerline-shell
-
-# Installing vimplug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# Font installation
-brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
-
 # Plugin managers
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 fisher install jorgebucaran/nvm.fish
+
+# Font installation
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
 
 # Node setup
 nvm install latest
