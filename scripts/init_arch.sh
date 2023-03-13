@@ -38,6 +38,10 @@ fisher add jorgebucaran/nvm.fish
 yay -S i3-gaps i3blocks dmenu_recency rofi
 yay -S polybar polybar-scripts-git
 
+# Node setup
+nvm install latest
+nvm use latest
+
 # Clean up
 yay -r
 rm ~/install -rf
