@@ -24,6 +24,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
+# Plugin managers
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher install jorgebucaran/nvm.fish
+
+# Node setup
+nvm install latest
+nvm use latest
+
 # Clean up
 
 # Setting up
