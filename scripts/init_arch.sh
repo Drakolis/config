@@ -34,13 +34,12 @@ yay -S nerd-fonts-hack ttf-exo-2
 yay -S fisher
 fisher add jorgebucaran/nvm.fish
 
+#  Change shell
+chsh -s /usr/bin/fish
+
 # DE installation
 # yay -S i3-gaps i3blocks dmenu_recency rofi
 # yay -S polybar polybar-scripts-git
-
-# Fisher
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-fisher install jorgebucaran/nvm.fish
 
 # Node setup
 nvm install latest
@@ -52,4 +51,3 @@ rm ~/install -rf
 
 # Setting up
 git config --global core.excludesfile '~/global.gitignore'
-# chsh -s /usr/bin/fish
