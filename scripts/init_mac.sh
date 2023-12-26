@@ -15,19 +15,22 @@ brew install fish exa ctags ffmpeg neofetch
 
 # Plugin managers
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-fisher install jorgebucaran/nvm.fish
 
 # Font installation
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
 
+# Shell 
+chsh -s /usr/bin/fish
+
+# Shell extensions
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher add jorgebucaran/nvm.fish
+fish
+
 # Node setup
 nvm install latest
 nvm use latest
 
-# Clean up
-
 # Setting up
 git config --global core.excludesfile '~/global.gitignore'
-chsh -s /usr/bin/fish
