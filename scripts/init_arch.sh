@@ -21,7 +21,7 @@ fi
 yay -S fish exa ctags python-pip ffmpeg neofetch
 
 # Powerline for shell installation
-sudo pip install powerline-shell
+# sudo pip install powerline-shell
 
 # Installing vimplug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -35,8 +35,12 @@ yay -S fisher
 fisher add jorgebucaran/nvm.fish
 
 # DE installation
-yay -S i3-gaps i3blocks dmenu_recency rofi
-yay -S polybar polybar-scripts-git
+# yay -S i3-gaps i3blocks dmenu_recency rofi
+# yay -S polybar polybar-scripts-git
+
+# Fisher
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher install jorgebucaran/nvm.fish
 
 # Node setup
 nvm install latest
@@ -48,4 +52,4 @@ rm ~/install -rf
 
 # Setting up
 git config --global core.excludesfile '~/global.gitignore'
-chsh -s /usr/bin/fish
+# chsh -s /usr/bin/fish
