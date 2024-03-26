@@ -1,6 +1,8 @@
 set -x EDITOR vim
 set -x VISUAL vim
 
+nvm use latest
+
 # For adding yarn global bin to path if yarn exists
 if type yarn > /dev/null
   set -x PATH (yarn global bin) $PATH
@@ -11,15 +13,19 @@ alias ls "exa -a --group-directories-first"
 alias lsl "exa -a -l --group-directories-first"
 alias nr "npm run"
 alias cwd "echo $PWD"
+alias myip "curl ipecho.net/plain"
+alias weather "curl wttr.in"
 
 function cpyr
   cp $argv/$argv temp
   rm -rf $argv
   mv temp $argv
 end
+
 function fish_greeting
   neofetch
 end
+
 function languages_known
     if type ruby > /dev/null 2> /dev/null
       ruby --version
@@ -49,31 +55,31 @@ end
 # the default color
 #set fish_color_normal
 # the color for commands
-set fish_color_command cyan
+#set fish_color_command cyan
 # the color for quoted blocks of text
-set fish_color_quote brgreen
+#set fish_color_quote brgreen
 # the color for IO redirections
-set fish_color_redirection brwhite
+#set fish_color_redirection brwhite
 # the color for process separators like ';' and '&'
-set fish_color_end brwhite
+#set fish_color_end brwhite
 # the color used to highlight potential errors
-set fish_color_error red
+#set fish_color_error red
 # the color for regular command parameters
-set fish_color_param brgreen
+#set fish_color_param brgreen
 # the color used for code comments
-set fish_color_comment brblack
+#set fish_color_comment brblack
 # the color used to highlight matching parenthesis
-set fish_color_match brcyan
+#set fish_color_match brcyan
 # the color used when selecting text (in vi visual mode)
 #set fish_color_selection
 # used to highlight history search matches and the selected pager item (must be a background)
 #set fish_color_search_match
 # the color for parameter expansion operators like '*' and '~'
-set fish_color_operator bryellow
+#set fish_color_operator bryellow
 # the color used to highlight character escapes like '\n' and '\x70'
-set fish_color_escape brmagenta
+#set fish_color_escape brmagenta
 # the color used for the current working directory in the default prompt
-set fish_color_cwd bryellow
+#set fish_color_cwd bryellow
 # the color used for autosuggestions
 #set fish_color_autosuggestion
 # the color used to print the current username in some of fish default prompts
@@ -110,3 +116,4 @@ set fish_color_cwd bryellow
 #set fish_pager_color_selected_completion
 # fish_pager_color_description of the selected completion. Defaults to fish_pager_color_description
 #set fish_pager_color_selected_description
+
