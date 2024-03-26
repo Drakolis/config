@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 " Styling
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'joshdick/onedark.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
@@ -88,9 +89,9 @@ let g:netrw_liststyle=3
 " augroup END
 
 " Styling config
-colorscheme onedark
+colorscheme catppuccin_mocha
 set background=dark
-let g:airline_theme='onedark'
+let g:airline_theme = 'catppuccin_mocha'
 let g:rainbow_active = 1
 set guifont=Hack
 " This fixes background fuckups
@@ -298,3 +299,4 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
