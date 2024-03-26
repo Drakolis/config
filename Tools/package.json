@@ -1,0 +1,46 @@
+{
+  "name": "useful-tools",
+  "version": "1.0.0",
+  "description": "Mika's toolbox",
+  "author": "Mika Drakolis <mika.drakolis@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "run:kill-reset": "node kill-reset-demon.js",
+    "run:kill": "node kill-demon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drakolis/useful-tools.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drakolis/useful-tools/issues"
+  },
+  "dependencies": {
+    "ps-node": "^0.1.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "xo": "^0.56.0"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "endOfLine": "lf",
+    "bracketSpacing": true
+  },
+  "xo": {
+    "prettier": true,
+    "rules": {
+      "import/extensions": 0,
+      "n/file-extension-in-import": 0,
+      "new-cap": 0,
+      "unicorn/prefer-module": 0,
+      "no-unused-vars": 2,
+      "import/no-default-export": 2
+    }
+  }
+}

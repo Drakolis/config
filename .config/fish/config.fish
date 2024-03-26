@@ -11,6 +11,7 @@ end
 alias rmd "rm -rf"
 alias ls "exa -a --group-directories-first"
 alias lsl "exa -a -l --group-directories-first"
+alias cat "bat -n"
 alias nr "npm run"
 alias cwd "echo $PWD"
 alias myip "curl ipecho.net/plain"
@@ -116,4 +117,3 @@ end
 #set fish_pager_color_selected_completion
 # fish_pager_color_description of the selected completion. Defaults to fish_pager_color_description
 #set fish_pager_color_selected_description
-

@@ -7,30 +7,38 @@ else
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-# Updating the system and getting important utilities
-brew install git wget go
+echo "Getting important utilities"
+brew install git wget go curl
 
-# Commmon tools installation
-brew install fish exa ctags ffmpeg neofetch
+echo "Commmon tools installation"
+brew install ffmpeg ctags fish exa mc bat htop neofetch
 
-# Plugin managers
+echo "Vim Plugins"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# Font installation
-brew tap homebrew/cask-fonts
-brew cask install font-hack-nerd-font
+echo "MC theme install"
+mkdir -p $HOME/.local/share/mc/skins && cd $HOME/.local/share/mc/skins && git clone https://github.com/catppuccin/mc.git && ln -s -f ./mc/catppuccin.ini .
 
-# Shell 
+# Shell
 chsh -s /usr/bin/fish
 
-# Shell extensions
+echo "Shell extensions"
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-fisher add jorgebucaran/nvm.fish
+fisher list
+fisher update
+# fisher add jorgebucaran/fisher
+# fisher add jorgebucaran/nvm.fish
+# fisher add 0rax/fishline
+# fisher add catppuccin/fish
 fish
 
-# Node setup
+echo "Installing Node.js"
 nvm install latest
 nvm use latest
 
-# Setting up
-git config --global core.excludesfile '~/global.gitignore'
+echo "Font installation"
+cd /Library/Fonts;
+curl -o "MesloLGS NF Regular.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf' --compressed;
+curl -o "MesloLGS NF Bold.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold.ttf' --compressed;
+curl -o "MesloLGS NF Italic.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Italic.ttf' --compressed;
+curl -o "MesloLGS NF Bold Italic.ttf" 'https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Bold%20Italic.ttf' --compressed;
