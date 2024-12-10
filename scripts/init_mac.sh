@@ -11,7 +11,7 @@ echo "Getting important utilities"
 brew install git wget go curl
 
 echo "Commmon tools installation"
-brew install ffmpeg ctags fish exa mc bat htop neofetch
+brew install ffmpeg ctags exa mc bat htop midnight-commander
 
 echo "Vim Plugins"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -19,22 +19,20 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 echo "MC theme install"
 mkdir -p $HOME/.local/share/mc/skins && cd $HOME/.local/share/mc/skins && git clone https://github.com/catppuccin/mc.git && ln -s -f ./mc/catppuccin.ini .
 
-# Shell
-chsh -s /usr/bin/fish
+echo "asdf"
+brew install asdf
+asdf plugin add java
+asdf plugin add nodejs
+asdf plugin add rust
+asdf plugin add python
 
-echo "Shell extensions"
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-fisher list
-fisher update
-# fisher add jorgebucaran/fisher
-# fisher add jorgebucaran/nvm.fish
-# fisher add 0rax/fishline
-# fisher add catppuccin/fish
-fish
-
-echo "Installing Node.js"
-nvm install latest
-nvm use latest
+echo "zsh plugins"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k\
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 echo "Font installation"
 cd /Library/Fonts;
