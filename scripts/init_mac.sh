@@ -25,6 +25,7 @@ asdf plugin add java
 asdf plugin add nodejs
 asdf plugin add rust
 asdf plugin add python
+asdf plugin add go
 
 echo "zsh plugins"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
