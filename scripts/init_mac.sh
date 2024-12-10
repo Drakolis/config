@@ -8,7 +8,7 @@ else
 fi
 
 echo "Getting important utilities"
-brew install git wget go curl
+brew install git wget curl
 
 echo "Commmon tools installation"
 brew install ffmpeg ctags exa mc bat htop midnight-commander
